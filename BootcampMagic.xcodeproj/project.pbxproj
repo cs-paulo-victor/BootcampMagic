@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7F92601200F0089DB19 /* AppDelegate.swift */; };
+		2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */; };
+		2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FD2601200F0089DB19 /* ViewController.swift */; };
+		2F45B8012601200F0089DB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B7FF2601200F0089DB19 /* Main.storyboard */; };
+		2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B8022601200F0089DB19 /* BootcampMagic.xcdatamodeld */; };
+		2F45B806260120120089DB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B805260120120089DB19 /* Assets.xcassets */; };
+		2F45B809260120120089DB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B807260120120089DB19 /* LaunchScreen.storyboard */; };
+		2F45B814260120120089DB19 /* BootcampMagicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B813260120120089DB19 /* BootcampMagicTests.swift */; };
+		2F45B81F260120120089DB19 /* BootcampMagicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F45B810260120120089DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F45B7EE2601200F0089DB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F45B7F52601200F0089DB19;
+			remoteInfo = BootcampMagic;
+		};
+		2F45B81B260120120089DB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F45B7EE2601200F0089DB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F45B7F52601200F0089DB19;
+			remoteInfo = BootcampMagic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F45B7F62601200F0089DB19 /* BootcampMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F45B7F92601200F0089DB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F45B7FD2601200F0089DB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F45B8002601200F0089DB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F45B8032601200F0089DB19 /* BootcampMagic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BootcampMagic.xcdatamodel; sourceTree = "<group>"; };
+		2F45B805260120120089DB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F45B808260120120089DB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F45B80A260120120089DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F45B80F260120120089DB19 /* BootcampMagicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootcampMagicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F45B813260120120089DB19 /* BootcampMagicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampMagicTests.swift; sourceTree = "<group>"; };
+		2F45B815260120120089DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F45B81A260120120089DB19 /* BootcampMagicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootcampMagicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampMagicUITests.swift; sourceTree = "<group>"; };
+		2F45B820260120120089DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F45B7F32601200F0089DB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F45B80C260120120089DB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F45B817260120120089DB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F45B7ED2601200F0089DB19 = {
+			isa = PBXGroup;
+			children = (
+				2F45B7F82601200F0089DB19 /* BootcampMagic */,
+				2F45B812260120120089DB19 /* BootcampMagicTests */,
+				2F45B81D260120120089DB19 /* BootcampMagicUITests */,
+				2F45B7F72601200F0089DB19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F45B7F72601200F0089DB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F45B7F62601200F0089DB19 /* BootcampMagic.app */,
+				2F45B80F260120120089DB19 /* BootcampMagicTests.xctest */,
+				2F45B81A260120120089DB19 /* BootcampMagicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F45B7F82601200F0089DB19 /* BootcampMagic */ = {
+			isa = PBXGroup;
+			children = (
+				2F45B7F92601200F0089DB19 /* AppDelegate.swift */,
+				2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */,
+				2F45B7FD2601200F0089DB19 /* ViewController.swift */,
+				2F45B7FF2601200F0089DB19 /* Main.storyboard */,
+				2F45B805260120120089DB19 /* Assets.xcassets */,
+				2F45B807260120120089DB19 /* LaunchScreen.storyboard */,
+				2F45B80A260120120089DB19 /* Info.plist */,
+				2F45B8022601200F0089DB19 /* BootcampMagic.xcdatamodeld */,
+			);
+			path = BootcampMagic;
+			sourceTree = "<group>";
+		};
+		2F45B812260120120089DB19 /* BootcampMagicTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F45B813260120120089DB19 /* BootcampMagicTests.swift */,
+				2F45B815260120120089DB19 /* Info.plist */,
+			);
+			path = BootcampMagicTests;
+			sourceTree = "<group>";
+		};
+		2F45B81D260120120089DB19 /* BootcampMagicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */,
+				2F45B820260120120089DB19 /* Info.plist */,
+			);
+			path = BootcampMagicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F45B7F52601200F0089DB19 /* BootcampMagic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F45B823260120120089DB19 /* Build configuration list for PBXNativeTarget "BootcampMagic" */;
+			buildPhases = (
+				2F45B8362601238A0089DB19 /* SwiftLint */,
+				2F45B7F22601200F0089DB19 /* Sources */,
+				2F45B7F32601200F0089DB19 /* Frameworks */,
+				2F45B7F42601200F0089DB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BootcampMagic;
+			packageProductDependencies = (
+			);
+			productName = BootcampMagic;
+			productReference = 2F45B7F62601200F0089DB19 /* BootcampMagic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F45B80E260120120089DB19 /* BootcampMagicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F45B826260120120089DB19 /* Build configuration list for PBXNativeTarget "BootcampMagicTests" */;
+			buildPhases = (
+				2F45B80B260120120089DB19 /* Sources */,
+				2F45B80C260120120089DB19 /* Frameworks */,
+				2F45B80D260120120089DB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F45B811260120120089DB19 /* PBXTargetDependency */,
+			);
+			name = BootcampMagicTests;
+			productName = BootcampMagicTests;
+			productReference = 2F45B80F260120120089DB19 /* BootcampMagicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F45B819260120120089DB19 /* BootcampMagicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F45B829260120120089DB19 /* Build configuration list for PBXNativeTarget "BootcampMagicUITests" */;
+			buildPhases = (
+				2F45B816260120120089DB19 /* Sources */,
+				2F45B817260120120089DB19 /* Frameworks */,
+				2F45B818260120120089DB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F45B81C260120120089DB19 /* PBXTargetDependency */,
+			);
+			name = BootcampMagicUITests;
+			productName = BootcampMagicUITests;
+			productReference = 2F45B81A260120120089DB19 /* BootcampMagicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F45B7EE2601200F0089DB19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2F45B7F52601200F0089DB19 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2F45B80E260120120089DB19 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2F45B7F52601200F0089DB19;
+					};
+					2F45B819260120120089DB19 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2F45B7F52601200F0089DB19;
+					};
+				};
+			};
+			buildConfigurationList = 2F45B7F12601200F0089DB19 /* Build configuration list for PBXProject "BootcampMagic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F45B7ED2601200F0089DB19;
+			packageReferences = (
+			);
+			productRefGroup = 2F45B7F72601200F0089DB19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F45B7F52601200F0089DB19 /* BootcampMagic */,
+				2F45B80E260120120089DB19 /* BootcampMagicTests */,
+				2F45B819260120120089DB19 /* BootcampMagicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F45B7F42601200F0089DB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F45B809260120120089DB19 /* LaunchScreen.storyboard in Resources */,
+				2F45B806260120120089DB19 /* Assets.xcassets in Resources */,
+				2F45B8012601200F0089DB19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F45B80D260120120089DB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F45B818260120120089DB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F45B8362601238A0089DB19 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F45B7F22601200F0089DB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */,
+				2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */,
+				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
+				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F45B80B260120120089DB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F45B814260120120089DB19 /* BootcampMagicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F45B816260120120089DB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F45B81F260120120089DB19 /* BootcampMagicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F45B811260120120089DB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F45B7F52601200F0089DB19 /* BootcampMagic */;
+			targetProxy = 2F45B810260120120089DB19 /* PBXContainerItemProxy */;
+		};
+		2F45B81C260120120089DB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F45B7F52601200F0089DB19 /* BootcampMagic */;
+			targetProxy = 2F45B81B260120120089DB19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F45B7FF2601200F0089DB19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F45B8002601200F0089DB19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F45B807260120120089DB19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F45B808260120120089DB19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F45B821260120120089DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F45B822260120120089DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F45B824260120120089DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D299UT7GAB;
+				INFOPLIST_FILE = BootcampMagic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulovictor.BootcampMagic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F45B825260120120089DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D299UT7GAB;
+				INFOPLIST_FILE = BootcampMagic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulovictor.BootcampMagic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F45B827260120120089DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D299UT7GAB;
+				INFOPLIST_FILE = BootcampMagicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulovictor.BootcampMagicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BootcampMagic.app/BootcampMagic";
+			};
+			name = Debug;
+		};
+		2F45B828260120120089DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D299UT7GAB;
+				INFOPLIST_FILE = BootcampMagicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulovictor.BootcampMagicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BootcampMagic.app/BootcampMagic";
+			};
+			name = Release;
+		};
+		2F45B82A260120120089DB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D299UT7GAB;
+				INFOPLIST_FILE = BootcampMagicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulovictor.BootcampMagicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BootcampMagic;
+			};
+			name = Debug;
+		};
+		2F45B82B260120120089DB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D299UT7GAB;
+				INFOPLIST_FILE = BootcampMagicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulovictor.BootcampMagicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BootcampMagic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F45B7F12601200F0089DB19 /* Build configuration list for PBXProject "BootcampMagic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F45B821260120120089DB19 /* Debug */,
+				2F45B822260120120089DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F45B823260120120089DB19 /* Build configuration list for PBXNativeTarget "BootcampMagic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F45B824260120120089DB19 /* Debug */,
+				2F45B825260120120089DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F45B826260120120089DB19 /* Build configuration list for PBXNativeTarget "BootcampMagicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F45B827260120120089DB19 /* Debug */,
+				2F45B828260120120089DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F45B829260120120089DB19 /* Build configuration list for PBXNativeTarget "BootcampMagicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F45B82A260120120089DB19 /* Debug */,
+				2F45B82B260120120089DB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F45B8022601200F0089DB19 /* BootcampMagic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F45B8032601200F0089DB19 /* BootcampMagic.xcdatamodel */,
+			);
+			currentVersion = 2F45B8032601200F0089DB19 /* BootcampMagic.xcdatamodel */;
+			path = BootcampMagic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2F45B7EE2601200F0089DB19 /* Project object */;
+}
