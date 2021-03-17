@@ -10,14 +10,16 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkManager().searchCards(endpoint: .sets, type: .expansion) { (result) in
+
+        NetworkManager().request(endpoint: .sets, type: .expansion) { (result) in
             switch result {
             case .success(let data):
-                guard let resultado = data.sets else { return  }
+                guard let resultado = data.sets else { return }
                 print((resultado.map({ $0.name })).sorted())
             case .error(let anError):
                 print("Error: \(anError)")
             }
         }
+
     }
 }

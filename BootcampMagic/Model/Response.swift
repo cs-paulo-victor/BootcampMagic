@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Result: Codable {
+struct Response: Codable {
     let cards: [Card]?
     let sets: [CardSet]?
 

@@ -21,23 +21,28 @@ enum Type: String {
 }
 
 public class NetworkManager {
-    func searchCards (endpoint: Endpoint, type: Type? = nil, callback: @escaping (Result<Search>) -> Void) {
+    func request (endpoint: Endpoint, type: Type? = nil, callback: @escaping (Result<Response>) -> Void) {
         var endpoint = "https://api.magicthegathering.io/v1/\(endpoint)"
+
         if let type = type {
             endpoint.append("?type=\(type)")
         }
+
         guard let url = URL(string: endpoint) else {
             callback(.error(NSError()))
             return
         }
+
         let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
             guard let data = data else {
                 return
             }
 
             let jsonDecoder = JSONDecoder()
+
             do {
-                let response = try jsonDecoder.decode(Search.self, from: data)
+                let response = try jsonDecoder.decode(Response.self, from: data)
+
                 DispatchQueue.main.async {
                     callback(.success(response))
                 }
