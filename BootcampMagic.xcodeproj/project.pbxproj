@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7F92601200F0089DB19 /* AppDelegate.swift */; };
 		2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */; };
-		2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FD2601200F0089DB19 /* ViewController.swift */; };
 		2F45B8012601200F0089DB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B7FF2601200F0089DB19 /* Main.storyboard */; };
 		2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B8022601200F0089DB19 /* BootcampMagic.xcdatamodeld */; };
 		2F45B806260120120089DB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B805260120120089DB19 /* Assets.xcassets */; };
 		2F45B809260120120089DB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B807260120120089DB19 /* LaunchScreen.storyboard */; };
 		2F45B814260120120089DB19 /* BootcampMagicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B813260120120089DB19 /* BootcampMagicTests.swift */; };
 		2F45B81F260120120089DB19 /* BootcampMagicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */; };
+		2FE7D5D92602722C00DEEC2A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5D72602722C00DEEC2A /* Card.swift */; };
+		2FE7D5DA2602722C00DEEC2A /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5D82602722C00DEEC2A /* Search.swift */; };
+		2FE7D5E72602726500DEEC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5E62602726500DEEC2A /* ViewController.swift */; };
+		2FE7D5EF2602727400DEEC2A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5EE2602727400DEEC2A /* NetworkManager.swift */; };
+		2FE7D5F426027C8F00DEEC2A /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5F326027C8F00DEEC2A /* CardSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		2F45B7F62601200F0089DB19 /* BootcampMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45B7F92601200F0089DB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F45B7FD2601200F0089DB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F45B8002601200F0089DB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F45B8032601200F0089DB19 /* BootcampMagic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BootcampMagic.xcdatamodel; sourceTree = "<group>"; };
 		2F45B805260120120089DB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		2F45B81A260120120089DB19 /* BootcampMagicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootcampMagicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampMagicUITests.swift; sourceTree = "<group>"; };
 		2F45B820260120120089DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE7D5D72602722C00DEEC2A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2FE7D5D82602722C00DEEC2A /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		2FE7D5E62602726500DEEC2A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BootcampMagic/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		2FE7D5EE2602727400DEEC2A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2FE7D5F326027C8F00DEEC2A /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +115,6 @@
 				2FC4BA3126024640008003BF /* Model */,
 				2F45B7F92601200F0089DB19 /* AppDelegate.swift */,
 				2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */,
-				2F45B7FD2601200F0089DB19 /* ViewController.swift */,
 				2F45B7FF2601200F0089DB19 /* Main.storyboard */,
 				2F45B805260120120089DB19 /* Assets.xcassets */,
 				2F45B807260120120089DB19 /* LaunchScreen.storyboard */,
@@ -138,6 +145,9 @@
 		2FC4BA3126024640008003BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FE7D5D72602722C00DEEC2A /* Card.swift */,
+				2FE7D5D82602722C00DEEC2A /* Search.swift */,
+				2FE7D5F326027C8F00DEEC2A /* CardSet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 		2FC4BA3226024649008003BF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2FE7D5EE2602727400DEEC2A /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 		2FC4BA3426024675008003BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FE7D5E62602726500DEEC2A /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,8 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE7D5F426027C8F00DEEC2A /* CardSet.swift in Sources */,
 				2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */,
-				2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */,
+				2FE7D5D92602722C00DEEC2A /* Card.swift in Sources */,
+				2FE7D5DA2602722C00DEEC2A /* Search.swift in Sources */,
+				2FE7D5EF2602727400DEEC2A /* NetworkManager.swift in Sources */,
+				2FE7D5E72602726500DEEC2A /* ViewController.swift in Sources */,
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
 			);
