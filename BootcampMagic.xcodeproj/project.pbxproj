@@ -16,6 +16,8 @@
 		2F45B809260120120089DB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B807260120120089DB19 /* LaunchScreen.storyboard */; };
 		2F45B814260120120089DB19 /* BootcampMagicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B813260120120089DB19 /* BootcampMagicTests.swift */; };
 		2F45B81F260120120089DB19 /* BootcampMagicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */; };
+		48B33D5A26026005003399E3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5926026005003399E3 /* Colors.swift */; };
+		48B33D5F2602639D003399E3 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5E2602639D003399E3 /* Typography.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2F45B81A260120120089DB19 /* BootcampMagicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootcampMagicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampMagicUITests.swift; sourceTree = "<group>"; };
 		2F45B820260120120089DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B33D5926026005003399E3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		48B33D5E2602639D003399E3 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 		2FC4BA3126024640008003BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48B33D5926026005003399E3 /* Colors.swift */,
+				48B33D5E2602639D003399E3 /* Typography.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,8 +326,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */,
+				48B33D5A26026005003399E3 /* Colors.swift in Sources */,
 				2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */,
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
+				48B33D5F2602639D003399E3 /* Typography.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
