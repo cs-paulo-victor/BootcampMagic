@@ -14,7 +14,7 @@ struct Card: Codable {
 
     enum CodingKeys: String, CodingKey {
         case imageUrl = "imageUrl"
-        case idCard = "id"
+        case idCard = "multiverseid"
         case name = "name"
     }
 }
