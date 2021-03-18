@@ -8,10 +8,10 @@
 import UIKit
 
 private enum Fonts {
-    static let big = UIFont(name: "Roboto-bold", size: 36)
-    static let middle = UIFont(name: "Roboto-bold", size: 30)
-    static let small = UIFont(name: "Roboto-bold", size: 18)
-    static let tiny = UIFont(name: "Roboto-bold", size: 16)
+    static let big = UIFont(name: "Roboto-Bold", size: 36)
+    static let middle = UIFont(name: "Roboto-Bold", size: 30)
+    static let small = UIFont(name: "Roboto-Bold", size: 18)
+    static let tiny = UIFont(name: "Roboto-Bold", size: 16)
 }
 
 enum TextFont {
