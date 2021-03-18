@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7F92601200F0089DB19 /* AppDelegate.swift */; };
 		2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */; };
-		2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FD2601200F0089DB19 /* ViewController.swift */; };
+		2F45B7FE2601200F0089DB19 /* ExpansionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B7FD2601200F0089DB19 /* ExpansionsViewController.swift */; };
 		2F45B8012601200F0089DB19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B7FF2601200F0089DB19 /* Main.storyboard */; };
 		2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B8022601200F0089DB19 /* BootcampMagic.xcdatamodeld */; };
 		2F45B806260120120089DB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B805260120120089DB19 /* Assets.xcassets */; };
 		2F45B809260120120089DB19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F45B807260120120089DB19 /* LaunchScreen.storyboard */; };
 		2F45B814260120120089DB19 /* BootcampMagicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B813260120120089DB19 /* BootcampMagicTests.swift */; };
 		2F45B81F260120120089DB19 /* BootcampMagicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */; };
+		4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */; };
+		4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBC026038B4000ED635D /* FavoritesViewController.swift */; };
 		48B33D5A26026005003399E3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5926026005003399E3 /* Colors.swift */; };
 		48B33D5F2602639D003399E3 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5E2602639D003399E3 /* Typography.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +43,7 @@
 		2F45B7F62601200F0089DB19 /* BootcampMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45B7F92601200F0089DB19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F45B7FD2601200F0089DB19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F45B7FD2601200F0089DB19 /* ExpansionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionsViewController.swift; sourceTree = "<group>"; };
 		2F45B8002601200F0089DB19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F45B8032601200F0089DB19 /* BootcampMagic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BootcampMagic.xcdatamodel; sourceTree = "<group>"; };
 		2F45B805260120120089DB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		2F45B81A260120120089DB19 /* BootcampMagicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BootcampMagicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampMagicUITests.swift; sourceTree = "<group>"; };
 		2F45B820260120120089DB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTabBarController.swift; sourceTree = "<group>"; };
+		4888FBC026038B4000ED635D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		48B33D5926026005003399E3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		48B33D5E2602639D003399E3 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +115,6 @@
 				2FC4BA3126024640008003BF /* Model */,
 				2F45B7F92601200F0089DB19 /* AppDelegate.swift */,
 				2F45B7FB2601200F0089DB19 /* SceneDelegate.swift */,
-				2F45B7FD2601200F0089DB19 /* ViewController.swift */,
 				2F45B7FF2601200F0089DB19 /* Main.storyboard */,
 				2F45B805260120120089DB19 /* Assets.xcassets */,
 				2F45B807260120120089DB19 /* LaunchScreen.storyboard */,
@@ -165,6 +168,9 @@
 		2FC4BA352602467A008003BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */,
+				2F45B7FD2601200F0089DB19 /* ExpansionsViewController.swift */,
+				4888FBC026038B4000ED635D /* FavoritesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,10 +333,12 @@
 			files = (
 				2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */,
 				48B33D5A26026005003399E3 /* Colors.swift in Sources */,
-				2F45B7FE2601200F0089DB19 /* ViewController.swift in Sources */,
+				2F45B7FE2601200F0089DB19 /* ExpansionsViewController.swift in Sources */,
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
+				4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */,
 				48B33D5F2602639D003399E3 /* Typography.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
+				4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
