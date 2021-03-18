@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ViewCode.swift
 //  BootcampMagic
 //
 //  Created by paulo.victor.g.rosa on 18/03/21.
@@ -20,6 +20,6 @@ extension ViewCode {
         setupConstraints()
         setupAditionalConfiguration()
     }
-    
+
     func setupAditionalConfiguration() { }
 }

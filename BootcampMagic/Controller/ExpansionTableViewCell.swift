@@ -16,38 +16,29 @@ class ExpansionTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setupViews()
-        superview?.backgroundColor = .red
-    }
+
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
 
-extension ExpansionTableViewCell: ViewCode{
+extension ExpansionTableViewCell: ViewCode {
     func setupViewHierarchy() {
         addSubview(name)
     }
-    
+
     func setupConstraints() {
         name.snp.makeConstraints{ (make) in
-            make.top.equalTo(self).offset(16)
-            make.bottom.equalTo(self).offset(16)
+            make.top.equalTo(self).offset(14)
+            make.bottom.equalTo(self).offset(-15)
             make.leading.equalTo(self).offset(16)
-            make.trailing.equalTo(self).offset(16)
-            
         }
     }
-    
+
     func setupAditionalConfiguration() {
-        self.contentView.backgroundColor = .clear
+       self.backgroundColor = .clear
     }
-    
+
 }
