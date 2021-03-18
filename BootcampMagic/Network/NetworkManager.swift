@@ -28,7 +28,10 @@ enum Type: String {
 }
 
 public class NetworkManager {
-    func requestExpansions (endpoint: Endpoint, parameters: Parameters, type: Type? = nil, callback: @escaping (Result<Response>) -> Void) {
+    func requestExpansions (endpoint: Endpoint,
+                            parameters: Parameters,
+                            type: Type? = nil,
+                            callback: @escaping (Result<Response>) -> Void) {
         var endpoint = "https://api.magicthegathering.io/v1/\(endpoint)?\(parameters)"
 
         if let type = type {
@@ -61,7 +64,10 @@ public class NetworkManager {
     task.resume()
     }
 
-    func requestCards (endpoint: Endpoint, parameters: Parameters, code: String, callback: @escaping (Result<Response>) -> Void) {
+    func requestCards (endpoint: Endpoint,
+                       parameters: Parameters,
+                       code: String,
+                       callback: @escaping (Result<Response>) -> Void) {
         let endpoint = "https://api.magicthegathering.io/v1/\(endpoint)?\(parameters)=\(code)"
 
         guard let url = URL(string: endpoint) else {
