@@ -19,10 +19,8 @@ enum Endpoint: String {
 }
 
 enum Parameters: String {
-    // Verificar erro ao mudar de nome 
-
-    case set = "set"
-    case type = "type"
+    case set
+    case type
 }
 
 enum Type: String {
@@ -30,7 +28,7 @@ enum Type: String {
 }
 
 public class NetworkManager {
-    func request (endpoint: Endpoint, parameters: Parameters, type: Type? = nil, callback: @escaping (Result<Response>) -> Void) {
+    func requestExpansions (endpoint: Endpoint, parameters: Parameters, type: Type? = nil, callback: @escaping (Result<Response>) -> Void) {
         var endpoint = "https://api.magicthegathering.io/v1/\(endpoint)?\(parameters)"
 
         if let type = type {
