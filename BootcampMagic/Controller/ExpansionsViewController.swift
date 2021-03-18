@@ -12,7 +12,7 @@ class ExpansionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Expansions"
-        view.backgroundColor = .red
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
 }

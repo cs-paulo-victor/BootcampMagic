@@ -18,12 +18,4 @@ enum TextColor {
     static let body = Colors.white
     static let nameCard = Colors.white
     static let button = Colors.white
-
-}
-
-enum BackgroundColor {
-    static let navigation = Colors.white.withAlphaComponent(0.0)
-    static let subtitle = Colors.white
-    static let overlay = Colors.white.withAlphaComponent(0.0)
-    static let nameCard = Colors.white.withAlphaComponent(0.0)
 }
