@@ -7,11 +7,8 @@
 
 import UIKit
 
-extension ExpansionsViewController: UITableViewDelegate, UITableViewDataSource {
+extension ExpansionsViewController: UITableViewDataSource {
 
-    convenience init(expansionManager: ExpansionsManager) {
-        self.expansionManager = expansionManager
-    }
     func tableView(_ tableView: UITableView, heightForHeaderInSection
     section: Int) -> CGFloat {
       return 50
@@ -43,6 +40,7 @@ extension ExpansionsViewController: UITableViewDelegate, UITableViewDataSource {
         if let users = expansionManager.expansionsDictionaries[userKey] {
             return users.count
         }
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,8 +50,9 @@ extension ExpansionsViewController: UITableViewDelegate, UITableViewDataSource {
         }
         let userKey = expansionManager.expansionsSections[indexPath.section]
         if let users = expansionManager.expansionsDictionaries[userKey.uppercased()] {
-            cell.configure(user: users[indexPath.row])
+            cell.name.text = users[indexPath.row].name
         }
+        return cell
     }
 
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

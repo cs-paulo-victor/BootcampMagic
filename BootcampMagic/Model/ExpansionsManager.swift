@@ -62,7 +62,7 @@ extension ExpansionsManager {
                 guard let resultado = data.sets else { return }
                 let expansion = resultado.sorted { $0.name < $1.name }
                 self.resultado = expansion
-//                self.tableView.reloadData()
+                
             case .error(let anError):
                 print("Error: \(anError)")
             }

@@ -18,11 +18,8 @@ class ExpansionsViewController: UIViewController {
         return tableView
     }()
 
-    var expansionManager: ExpansionsManager
+    var expansionManager = ExpansionsManager()
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Expansions"
