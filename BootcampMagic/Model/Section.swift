@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Section {
+    var letter: Character
+    var expantions: [CardSet]
+}

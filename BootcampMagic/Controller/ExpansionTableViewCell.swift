@@ -17,7 +17,6 @@ class ExpansionTableViewCell: UITableViewCell {
         return label
     }()
 
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -30,7 +29,7 @@ extension ExpansionTableViewCell: ViewCode {
     }
 
     func setupConstraints() {
-        name.snp.makeConstraints{ (make) in
+        name.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(14)
             make.bottom.equalTo(self).offset(-15)
             make.leading.equalTo(self).offset(16)
