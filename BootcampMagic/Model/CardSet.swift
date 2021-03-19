@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CardSet: Codable {
+public struct CardSet: Codable {
     let code,
         name,
         type: String

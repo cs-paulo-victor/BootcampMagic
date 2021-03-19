@@ -9,7 +9,7 @@ import UIKit
 
 class ProjectTabBarController: UITabBarController {
     let projectTBC = UITabBarController()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         creatTBC()
@@ -43,7 +43,7 @@ class ProjectTabBarController: UITabBarController {
     }
 
     func creatEVC() -> UINavigationController {
-        let firstViewController = UINavigationController(rootViewController: ExpansionsViewController())
+        let firstViewController = UINavigationController(rootViewController: ExpansionsViewController)
         firstViewController.title = "Expansions"
         return firstViewController
     }

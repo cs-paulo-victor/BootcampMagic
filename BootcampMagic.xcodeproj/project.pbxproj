@@ -23,6 +23,8 @@
 		2FE7D5E72602726500DEEC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5E62602726500DEEC2A /* ViewController.swift */; };
 		2FE7D5EF2602727400DEEC2A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5EE2602727400DEEC2A /* NetworkManager.swift */; };
 		2FE7D5F426027C8F00DEEC2A /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5F326027C8F00DEEC2A /* CardSet.swift */; };
+		4863D64B26041DF600D50252 /* ExpansionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4863D64A26041DF600D50252 /* ExpansionTableView.swift */; };
+		48711FC126043E6B003D1463 /* ExpansionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48711FC026043E6B003D1463 /* ExpansionsManager.swift */; };
 		4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */; };
 		4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBC026038B4000ED635D /* FavoritesViewController.swift */; };
 		48B33D5A26026005003399E3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5926026005003399E3 /* Colors.swift */; };
@@ -69,6 +71,8 @@
 		2FE7D5E62602726500DEEC2A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BootcampMagic/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		2FE7D5EE2602727400DEEC2A /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2FE7D5F326027C8F00DEEC2A /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		4863D64A26041DF600D50252 /* ExpansionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionTableView.swift; sourceTree = "<group>"; };
+		48711FC026043E6B003D1463 /* ExpansionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionsManager.swift; sourceTree = "<group>"; };
 		4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTabBarController.swift; sourceTree = "<group>"; };
 		4888FBC026038B4000ED635D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		48B33D5926026005003399E3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				2FE7D5F326027C8F00DEEC2A /* CardSet.swift */,
 				48B33D5926026005003399E3 /* Colors.swift */,
 				48B33D5E2602639D003399E3 /* Typography.swift */,
+				48711FC026043E6B003D1463 /* ExpansionsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,7 +195,9 @@
 		2FC4BA3426024675008003BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */,
 				2FE7D5E62602726500DEEC2A /* ViewController.swift */,
+				4863D64A26041DF600D50252 /* ExpansionTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,7 +208,6 @@
 				4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */,
 				2F45B7FD2601200F0089DB19 /* ExpansionsViewController.swift */,
 				4888FBC026038B4000ED635D /* FavoritesViewController.swift */,
-				2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,8 +389,10 @@
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
 				2FAC567F2603D56100E9D82D /* ViewCode.swift in Sources */,
 				4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */,
+				4863D64B26041DF600D50252 /* ExpansionTableView.swift in Sources */,
 				48B33D5F2602639D003399E3 /* Typography.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
+				48711FC126043E6B003D1463 /* ExpansionsManager.swift in Sources */,
 				4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */,
 				2F74B9D02603DB0A0091127D /* ExpansionTableViewCell.swift in Sources */,
 			);
