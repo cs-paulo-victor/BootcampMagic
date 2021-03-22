@@ -8,7 +8,8 @@
 import UIKit
 import SnapKit
 
-class ExpansionsViewController: UIViewController {
+class ExpansionsViewController: CustomViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
@@ -23,7 +24,6 @@ class ExpansionsViewController: UIViewController {
 extension ExpansionsViewController {
     func setupNavigationBar() {
         title = "Expansions"
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     func fetchExpansions() {
