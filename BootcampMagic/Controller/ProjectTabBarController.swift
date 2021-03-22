@@ -9,12 +9,13 @@ import UIKit
 
 class ProjectTabBarController: UITabBarController {
     let projectTabBarController = UITabBarController()
+    var cleanDone = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignBackground()
         creatBorderTabBar()
         setupTabBar()
-        assignBackground()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,10 +39,10 @@ class ProjectTabBarController: UITabBarController {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
                                                             .font: TextFont.button ?? .systemFont(ofSize: 16)],
                                                          for: .normal)
+
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
                                                             .font: TextFont.button ?? .systemFont(ofSize: 16)],
                                                          for: .selected)
-
         UITabBar.appearance().tintColor = TextColor.button
         UITabBar.setTransparentTabbar()
         viewControllers = [setupExpansionsViewController(), setupFavoritesViewController()]
@@ -72,7 +73,10 @@ class ProjectTabBarController: UITabBarController {
 }
 
 extension UITabBar {
-    static func setTransparentTabbar() {
-        UITabBar.appearance().backgroundImage = UIImage()
-    }
+
+static func setTransparentTabbar() {
+  UITabBar.appearance().backgroundImage = UIImage()
+  UITabBar.appearance().shadowImage = UIImage()
+  UITabBar.appearance().clipsToBounds = true
+ }
 }
