@@ -8,12 +8,12 @@
 import UIKit
 
 class ProjectTabBarController: UITabBarController {
-    let projectTBC = UITabBarController()
+    let projectTabBarController = UITabBarController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         creatBorderTabBar()
-        creatTBC()
+        setupTabBar()
         assignBackground()
     }
 
@@ -34,7 +34,7 @@ class ProjectTabBarController: UITabBarController {
         self.view.sendSubviewToBack(imageView)
       }
 
-    func creatTBC() {
+    func setupTabBar() {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
                                                             .font: TextFont.button ?? .systemFont(ofSize: 16)],
                                                          for: .normal)
@@ -44,16 +44,16 @@ class ProjectTabBarController: UITabBarController {
 
         UITabBar.appearance().tintColor = TextColor.button
         UITabBar.setTransparentTabbar()
-        viewControllers = [creatEVC(), creatFVC()]
+        viewControllers = [setupExpansionsViewController(), setupFavoritesViewController()]
     }
 
-    func creatEVC() -> UINavigationController {
+    func setupExpansionsViewController() -> UINavigationController {
         let firstViewController = UINavigationController(rootViewController: ExpansionsViewController())
         firstViewController.title = "Expansions"
         return firstViewController
     }
 
-    func creatFVC() -> UINavigationController {
+    func setupFavoritesViewController() -> UINavigationController {
         let secondViewController = UINavigationController(rootViewController: FavoritesViewController())
         secondViewController.title = "Favorites"
         return secondViewController

@@ -13,9 +13,6 @@ struct CardSet: Codable {
         type: String
 
     enum CodingKeys: String, CodingKey {
-        case code
-        case name
-        case type
-
+        case code, name, type
     }
 }
