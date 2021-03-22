@@ -12,7 +12,6 @@ struct Response: Codable {
     let sets: [CardSet]?
 
     enum CodingKeys: String, CodingKey {
-        case cards
-        case sets
+        case cards, sets
     }
 }
