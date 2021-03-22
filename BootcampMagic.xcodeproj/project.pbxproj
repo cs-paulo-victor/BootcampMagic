@@ -19,6 +19,8 @@
 		2F6C8F992608DDE600FD65C8 /* ExpensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C8F982608DDE600FD65C8 /* ExpensionsView.swift */; };
 		2F74B9D02603DB0A0091127D /* ExpansionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */; };
 		2FAC567F2603D56100E9D82D /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC567E2603D56100E9D82D /* ViewCode.swift */; };
+		2FC5D46826090A3C00C13691 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D46626090A3C00C13691 /* Typography.swift */; };
+		2FC5D46926090A3C00C13691 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D46726090A3C00C13691 /* Colors.swift */; };
 		2FD0DD9426051DB300D3ABDF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0DD9326051DB300D3ABDF /* Section.swift */; };
 		2FE7D5D92602722C00DEEC2A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5D72602722C00DEEC2A /* Card.swift */; };
 		2FE7D5DA2602722C00DEEC2A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5D82602722C00DEEC2A /* Response.swift */; };
@@ -27,8 +29,6 @@
 		486E5D462603EECA00805009 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E5D452603EECA00805009 /* CustomViewController.swift */; };
 		4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */; };
 		4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBC026038B4000ED635D /* FavoritesViewController.swift */; };
-		48B33D5A26026005003399E3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5926026005003399E3 /* Colors.swift */; };
-		48B33D5F2602639D003399E3 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B33D5E2602639D003399E3 /* Typography.swift */; };
 		48BD6AE82603C693005537D2 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +67,8 @@
 		2F6C8F982608DDE600FD65C8 /* ExpensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensionsView.swift; sourceTree = "<group>"; };
 		2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionTableViewCell.swift; sourceTree = "<group>"; };
 		2FAC567E2603D56100E9D82D /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		2FC5D46626090A3C00C13691 /* Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		2FC5D46726090A3C00C13691 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2FD0DD9326051DB300D3ABDF /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		2FE7D5D72602722C00DEEC2A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2FE7D5D82602722C00DEEC2A /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		486E5D452603EECA00805009 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTabBarController.swift; sourceTree = "<group>"; };
 		4888FBC026038B4000ED635D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		48B33D5926026005003399E3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		48B33D5E2602639D003399E3 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,8 +188,6 @@
 				2FD0DD9326051DB300D3ABDF /* Section.swift */,
 				2FE7D5F326027C8F00DEEC2A /* CardSet.swift */,
 				48F605502608E3B80008643B /* Design */,
-				48B33D5926026005003399E3 /* Colors.swift */,
-				48B33D5E2602639D003399E3 /* Typography.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,8 +230,8 @@
 		48F605502608E3B80008643B /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				48B33D5926026005003399E3 /* Colors.swift */,
-				48B33D5E2602639D003399E3 /* Typography.swift */,
+				2FC5D46726090A3C00C13691 /* Colors.swift */,
+				2FC5D46626090A3C00C13691 /* Typography.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -402,17 +400,16 @@
 				2FE7D5D92602722C00DEEC2A /* Card.swift in Sources */,
 				2FE7D5DA2602722C00DEEC2A /* Response.swift in Sources */,
 				2FE7D5EF2602727400DEEC2A /* NetworkManager.swift in Sources */,
-				2FE7D5E72602726500DEEC2A /* ViewController.swift in Sources */,
-				48B33D5A26026005003399E3 /* Colors.swift in Sources */,
 				2F6C8F992608DDE600FD65C8 /* ExpensionsView.swift in Sources */,
 				2F45B7FE2601200F0089DB19 /* ExpansionsViewController.swift in Sources */,
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
 				2FAC567F2603D56100E9D82D /* ViewCode.swift in Sources */,
 				4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */,
-				48B33D5F2602639D003399E3 /* Typography.swift in Sources */,
+				2FC5D46926090A3C00C13691 /* Colors.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
 				2FD0DD9426051DB300D3ABDF /* Section.swift in Sources */,
 				4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */,
+				2FC5D46826090A3C00C13691 /* Typography.swift in Sources */,
 				2F74B9D02603DB0A0091127D /* ExpansionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
