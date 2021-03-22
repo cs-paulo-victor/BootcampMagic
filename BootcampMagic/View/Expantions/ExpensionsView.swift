@@ -72,7 +72,7 @@ extension ExpensionsView: UITableViewDataSource, UITableViewDelegate {
         }
         return ""
     }
-    
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
