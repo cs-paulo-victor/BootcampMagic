@@ -11,6 +11,10 @@ class CustomViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigation()
+    }
+
+    func setupNavigation() {
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar

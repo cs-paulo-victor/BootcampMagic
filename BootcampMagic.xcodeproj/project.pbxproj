@@ -160,8 +160,7 @@
 				2FE7D5D72602722C00DEEC2A /* Card.swift */,
 				2FE7D5D82602722C00DEEC2A /* Response.swift */,
 				2FE7D5F326027C8F00DEEC2A /* CardSet.swift */,
-				48B33D5926026005003399E3 /* Colors.swift */,
-				48B33D5E2602639D003399E3 /* Typography.swift */,
+				48F605502608E3B80008643B /* Design */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +198,15 @@
 				48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */,
 			);
 			path = Fontes;
+			sourceTree = "<group>";
+		};
+		48F605502608E3B80008643B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				48B33D5926026005003399E3 /* Colors.swift */,
+				48B33D5E2602639D003399E3 /* Typography.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
