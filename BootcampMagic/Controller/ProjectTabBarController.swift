@@ -43,6 +43,7 @@ class ProjectTabBarController: UITabBarController {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
                                                             .font: TextFont.button ?? .systemFont(ofSize: 16)],
                                                          for: .selected)
+        UITabBar.appearance().unselectedItemTintColor = TextColor.button
         UITabBar.appearance().tintColor = TextColor.button
         UITabBar.setTransparentTabbar()
         viewControllers = [setupExpansionsViewController(), setupFavoritesViewController()]
