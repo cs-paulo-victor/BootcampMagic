@@ -87,6 +87,7 @@ extension ExpensionsView: UITableViewDataSource {
         cell.setupViews()
         cell.name.text = arraySection[indexPath.section].expantions[indexPath.row].name
 
+        
         return cell
     }
 }
