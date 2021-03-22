@@ -12,6 +12,7 @@ class ProjectTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        creatBorderTabBar()
         creatTBC()
         assignBackground()
     }
@@ -34,8 +35,12 @@ class ProjectTabBarController: UITabBarController {
       }
 
     func creatTBC() {
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: TextFont.button], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: TextFont.button], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
+                                                            .font: TextFont.button ?? .systemFont(ofSize: 16)],
+                                                         for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
+                                                            .font: TextFont.button ?? .systemFont(ofSize: 16)],
+                                                         for: .selected)
 
         UITabBar.appearance().tintColor = TextColor.button
         UITabBar.setTransparentTabbar()
@@ -53,12 +58,21 @@ class ProjectTabBarController: UITabBarController {
         secondViewController.title = "Favorites"
         return secondViewController
     }
+    func creatBorderTabBar() {
+        let topline = CALayer()
+        topline.frame = CGRect(x: 24, y: 0, width: self.tabBar.frame.width - 48, height: 2)
+        topline.backgroundColor = UIColor.white.cgColor
+        self.tabBar.layer.addSublayer(topline)
+        let firstVerticalLine = CALayer()
+        let width = (self.tabBar.frame.width / 2)
+        firstVerticalLine.frame = CGRect(x: width, y: 4, width: 2, height: self.tabBar.frame.height - 8)
+        firstVerticalLine.backgroundColor = UIColor.white.cgColor
+        self.tabBar.layer.addSublayer(firstVerticalLine)
+    }
 }
 
 extension UITabBar {
     static func setTransparentTabbar() {
         UITabBar.appearance().backgroundImage = UIImage()
-        UITabBar.appearance().shadowImage = UIImage()
-        UITabBar.appearance().clipsToBounds = true
     }
 }

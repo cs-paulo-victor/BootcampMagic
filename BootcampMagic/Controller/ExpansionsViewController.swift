@@ -7,12 +7,10 @@
 
 import UIKit
 
-class ExpansionsViewController: UIViewController {
+class ExpansionsViewController: CustomViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Expansions"
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
-
 }

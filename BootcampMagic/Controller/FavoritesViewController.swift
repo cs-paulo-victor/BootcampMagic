@@ -7,13 +7,10 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+class FavoritesViewController: CustomViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Favorites"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.tintColor = TextColor.title
     }
-
 }
