@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 protocol ShowCardsProtocol: AnyObject {
-    func showCards ()
+    func showCards (expantionCode: String)
 }
 class ExpensionsView: UIView {
 
@@ -96,14 +96,13 @@ extension ExpensionsView: UITableViewDataSource {
         }
         cell.setupViews()
         cell.name.text = arraySection[indexPath.section].expantions[indexPath.row].name
-
         return cell
     }
 }
 
 extension ExpensionsView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.showCards()
+        delegate?.showCards(expantionCode: arraySection[indexPath.section].expantions[indexPath.row].code)
     }
 }
 // MARK: - Autolayout

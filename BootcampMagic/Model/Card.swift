@@ -8,12 +8,13 @@
 import UIKit
 
 struct Card: Codable {
-    let imageUrl,
+    let name,
         idCard,
-        name: String
+        imageUrl: String
 
     enum CodingKeys: String, CodingKey {
-        case imageUrl, name
+        case name
         case idCard = "multiverseid"
+        case imageUrl
     }
 }

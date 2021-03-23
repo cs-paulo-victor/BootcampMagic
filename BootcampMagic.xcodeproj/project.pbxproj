@@ -20,7 +20,7 @@
 		2F74B9D02603DB0A0091127D /* ExpansionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */; };
 		2F95048B26092BA20033FAAA /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95048A26092BA20033FAAA /* CardsListView.swift */; };
 		2F950498260A27690033FAAA /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F950497260A27690033FAAA /* CardCollectionViewCell.swift */; };
-		2F9504A5260A306A0033FAAA /* CardsViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9504A4260A306A0033FAAA /* CardsViewViewController.swift */; };
+		2F9504A5260A306A0033FAAA /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9504A4260A306A0033FAAA /* CardsViewController.swift */; };
 		2FAC567F2603D56100E9D82D /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC567E2603D56100E9D82D /* ViewCode.swift */; };
 		2FC5D46826090A3C00C13691 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D46626090A3C00C13691 /* Typography.swift */; };
 		2FC5D46926090A3C00C13691 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D46726090A3C00C13691 /* Colors.swift */; };
@@ -71,7 +71,7 @@
 		2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionTableViewCell.swift; sourceTree = "<group>"; };
 		2F95048A26092BA20033FAAA /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
 		2F950497260A27690033FAAA /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		2F9504A4260A306A0033FAAA /* CardsViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewViewController.swift; sourceTree = "<group>"; };
+		2F9504A4260A306A0033FAAA /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		2FAC567E2603D56100E9D82D /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		2FC5D46626090A3C00C13691 /* Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		2FC5D46726090A3C00C13691 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -199,9 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				2FE7D5D72602722C00DEEC2A /* Card.swift */,
+				2FE7D5F326027C8F00DEEC2A /* CardSet.swift */,
 				2FE7D5D82602722C00DEEC2A /* Response.swift */,
 				2FD0DD9326051DB300D3ABDF /* Section.swift */,
-				2FE7D5F326027C8F00DEEC2A /* CardSet.swift */,
 				48F605502608E3B80008643B /* Design */,
 			);
 			path = Model;
@@ -231,7 +231,7 @@
 				2F45B7FD2601200F0089DB19 /* ExpansionsViewController.swift */,
 				4888FBC026038B4000ED635D /* FavoritesViewController.swift */,
 				486E5D452603EECA00805009 /* CustomViewController.swift */,
-				2F9504A4260A306A0033FAAA /* CardsViewViewController.swift */,
+				2F9504A4260A306A0033FAAA /* CardsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 				2F45B7FE2601200F0089DB19 /* ExpansionsViewController.swift in Sources */,
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
 				2FAC567F2603D56100E9D82D /* ViewCode.swift in Sources */,
-				2F9504A5260A306A0033FAAA /* CardsViewViewController.swift in Sources */,
+				2F9504A5260A306A0033FAAA /* CardsViewController.swift in Sources */,
 				4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */,
 				2FC5D46926090A3C00C13691 /* Colors.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,

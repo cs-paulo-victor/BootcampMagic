@@ -8,6 +8,7 @@
 import UIKit
 
 class ExpansionsViewController: CustomViewController {
+    weak var delegate: ShowCardsProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +45,9 @@ extension ExpansionsViewController {
 }
 
 extension ExpansionsViewController: ShowCardsProtocol {
-    func showCards() {
-        self.navigationController?.pushViewController(CardsViewViewController(), animated: true)
-
+    func showCards(expantionCode: String) {
+        let cardViewControler = CardsViewController()
+        cardViewControler.showCards(expantionCode: expantionCode)
+        self.navigationController?.pushViewController(cardViewControler, animated: true)
     }
 }
