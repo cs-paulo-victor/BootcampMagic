@@ -10,6 +10,7 @@ import UIKit
 private enum Colors {
     static let black = UIColor.black
     static let white = UIColor.white
+    static let red = UIColor.red
 }
 
 enum TextColor {
@@ -17,5 +18,6 @@ enum TextColor {
     static let subtitle = Colors.black
     static let body = Colors.white
     static let nameCard = Colors.white
-    static let button = Colors.white
+    static let buttonTabBarSelect = Colors.red
+    static let buttonTabBarUnselected = Colors.black
 }

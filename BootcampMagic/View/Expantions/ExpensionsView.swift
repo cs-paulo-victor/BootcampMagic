@@ -103,7 +103,7 @@ extension ExpensionsView: ViewCode {
     func setupConstraints() {
         expansionTableView.snp.makeConstraints { (make) in
             make.top.equalTo(snp_topMargin)
-            make.bottom.equalToSuperview()
+            make.bottom.equalTo(snp_bottomMargin)
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
         }
