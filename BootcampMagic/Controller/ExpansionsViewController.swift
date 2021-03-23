@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class ExpansionsViewController: CustomViewController {
 
@@ -17,7 +16,9 @@ class ExpansionsViewController: CustomViewController {
     }
 
     override func loadView() {
-        view = ExpensionsView()
+        let expensionsView = ExpensionsView()
+        expensionsView.delegate = self
+        view = expensionsView
     }
 }
 
@@ -32,12 +33,19 @@ extension ExpansionsViewController {
             case .success(let data):
                 guard let resultado = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
                 let expansion = resultado.sorted { $0.name < $1.name }
-                expansionsView.resultado = expansion
+                expansionsView.result = expansion
                 expansionsView.setupSections(expensions: expansion)
                 expansionsView.expansionTableView.reloadData()
             case .error(let anError):
                 print("Error: \(anError)")
             }
         }
+    }
+}
+
+extension ExpansionsViewController: ShowCardsProtocol {
+    func showCards() {
+        self.navigationController?.pushViewController(CardsViewViewController(), animated: true)
+
     }
 }

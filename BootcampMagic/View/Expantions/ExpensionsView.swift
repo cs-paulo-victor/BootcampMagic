@@ -7,19 +7,27 @@
 
 import Foundation
 import UIKit
-
+protocol ShowCardsProtocol: AnyObject {
+    func showCards ()
+}
 class ExpensionsView: UIView {
-    var resultado = [CardSet]()
-    var sectionTitle = [Character]()
-    var arraySection = [Section]()
 
+    // MARK: - Views
     lazy var expansionTableView: UITableView  = {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .clear
         tableView.dataSource = self
+        tableView.delegate = self
         return tableView
     }()
+
+    // MARK: - Properties
+    var result = [CardSet]()
+    var sectionTitle = [Character]()
+    var arraySection = [Section]()
+    weak var delegate: ShowCardsProtocol?
+    // MARK: - Life Cycle
 
     init() {
         super.init(frame: .zero)
@@ -30,7 +38,7 @@ class ExpensionsView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
+    // MARK: - Setup
 extension ExpensionsView {
     func setupSections(expensions: [CardSet]) {
         var firstLetter = [Character]()
@@ -52,6 +60,7 @@ extension ExpensionsView {
     }
 }
 
+// MARK: - UICollectionViewDataSource
 extension ExpensionsView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arraySection[section].expantions.count
@@ -80,6 +89,7 @@ extension ExpensionsView: UITableViewDataSource {
         return CGFloat(50)
     }
 
+    // swiftlint:disable line_length
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ExpansionTableViewCell else {
             return UITableViewCell()
@@ -91,6 +101,12 @@ extension ExpensionsView: UITableViewDataSource {
     }
 }
 
+extension ExpensionsView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.showCards()
+    }
+}
+// MARK: - Autolayout
 extension ExpensionsView: ViewCode {
     func setupViewHierarchy() {
         addSubview(expansionTableView)

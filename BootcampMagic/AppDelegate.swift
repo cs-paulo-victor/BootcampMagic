@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: - Core Data stack
-
+    // swiftlint:disable unused_closure_parameter
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "BootcampMagic")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
