@@ -17,12 +17,6 @@ class ExpansionTableViewCell: UITableViewCell {
         return label
     }()
 
-    var creatCustomSeparator: UIView = {
-        let bottom = UIView()
-        bottom.backgroundColor = .white
-        return bottom
-    }()
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -32,7 +26,6 @@ class ExpansionTableViewCell: UITableViewCell {
 extension ExpansionTableViewCell: ViewCode {
     func setupViewHierarchy() {
         addSubview(name)
-        addSubview(creatCustomSeparator)
     }
 
     func setupConstraints() {
@@ -40,12 +33,6 @@ extension ExpansionTableViewCell: ViewCode {
             make.top.equalTo(self).offset(14)
             make.bottom.equalTo(self).offset(-15)
             make.leading.equalTo(self).offset(16)
-        }
-        creatCustomSeparator.snp.makeConstraints { (make) in
-            make.bottom.equalTo(self)
-            make.leading.equalTo(self).offset(16)
-            make.height.equalTo(2)
-            make.trailing.equalTo(self).offset(-16)
         }
     }
 

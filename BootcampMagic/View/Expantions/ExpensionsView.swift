@@ -17,6 +17,9 @@ class ExpensionsView: UIView {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .clear
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 16)
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
+        tableView.separatorColor = .white
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
