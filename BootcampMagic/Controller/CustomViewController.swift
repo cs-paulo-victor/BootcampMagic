@@ -19,6 +19,8 @@ class CustomViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar
             .largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: TextColor.title]
+        navigationController?.navigationBar.titleTextAttributes =
+            [NSAttributedString.Key.foregroundColor: TextColor.title]
         UINavigationBar.appearance()
             .titleTextAttributes = [NSAttributedString.Key.font: TextFont.title ?? .systemFont(ofSize: 36)]
     }

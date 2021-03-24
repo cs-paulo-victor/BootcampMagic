@@ -34,6 +34,8 @@
 		486E5D462603EECA00805009 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E5D452603EECA00805009 /* CustomViewController.swift */; };
 		4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */; };
 		4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBC026038B4000ED635D /* FavoritesViewController.swift */; };
+		4895B1B3260BAFC200133358 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 4895B1B2260BAFC200133358 /* Reachability */; };
+		4895B1B8260BAFE100133358 /* ReachabilityActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4895B1B7260BAFE100133358 /* ReachabilityActionDelegate.swift */; };
 		48BD6AE82603C693005537D2 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,7 @@
 		486E5D452603EECA00805009 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTabBarController.swift; sourceTree = "<group>"; };
 		4888FBC026038B4000ED635D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		4895B1B7260BAFE100133358 /* ReachabilityActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityActionDelegate.swift; sourceTree = "<group>"; };
 		48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +99,7 @@
 			files = (
 				2F6EFD30260B7A160011F6A9 /* Kingfisher in Frameworks */,
 				2F68264C2603D11900487187 /* SnapKit in Frameworks */,
+				4895B1B3260BAFC200133358 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +212,7 @@
 				2FE7D5D82602722C00DEEC2A /* Response.swift */,
 				2FD0DD9326051DB300D3ABDF /* Section.swift */,
 				48F605502608E3B80008643B /* Design */,
+				4895B1B7260BAFE100133358 /* ReachabilityActionDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,7 +282,7 @@
 			name = BootcampMagic;
 			packageProductDependencies = (
 				2F68264B2603D11900487187 /* SnapKit */,
-				2F6EFD2F260B7A160011F6A9 /* Kingfisher */,
+				4895B1B2260BAFC200133358 /* Reachability */,
 			);
 			productName = BootcampMagic;
 			productReference = 2F45B7F62601200F0089DB19 /* BootcampMagic.app */;
@@ -352,7 +357,7 @@
 			mainGroup = 2F45B7ED2601200F0089DB19;
 			packageReferences = (
 				2F68264A2603D11900487187 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2F6EFD2E260B7A160011F6A9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4895B1B1260BAFC200133358 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = 2F45B7F72601200F0089DB19 /* Products */;
 			projectDirPath = "";
@@ -418,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4895B1B8260BAFE100133358 /* ReachabilityActionDelegate.swift in Sources */,
 				2FE7D5F426027C8F00DEEC2A /* Expension.swift in Sources */,
 				486E5D462603EECA00805009 /* CustomViewController.swift in Sources */,
 				2F45B8042601200F0089DB19 /* BootcampMagic.xcdatamodeld in Sources */,
@@ -773,12 +779,12 @@
 				version = 5.0.1;
 			};
 		};
-		2F6EFD2E260B7A160011F6A9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		4895B1B1260BAFC200133358 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
 			requirement = {
 				kind = exactVersion;
-				version = 6.2.1;
+				version = 5.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -789,10 +795,10 @@
 			package = 2F68264A2603D11900487187 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		2F6EFD2F260B7A160011F6A9 /* Kingfisher */ = {
+		4895B1B2260BAFC200133358 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F6EFD2E260B7A160011F6A9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			package = 4895B1B1260BAFC200133358 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 

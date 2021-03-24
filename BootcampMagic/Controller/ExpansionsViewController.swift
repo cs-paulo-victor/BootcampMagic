@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ExpansionsViewController: CustomViewController {
+class ExpansionsViewController: CustomViewController,ReachabilityObserverDelegate {
     weak var delegate: ShowCardsProtocol?
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        try? addReachabilityObserver()
         setupNavigationBar()
         fetchExpansions()
     }
@@ -20,6 +22,28 @@ class ExpansionsViewController: CustomViewController {
         let expensionsView = ExpensionsView()
         expensionsView.delegate = self
         view = expensionsView
+    }
+    deinit {
+      removeReachabilityObserver()
+    }
+
+    func reachabilityChanged(_ isReachable: Bool) {
+        if !isReachable {
+            alert()
+        }
+    }
+
+    func alert() {
+        let alert = UIAlertController(title: "Falha na conexão com a internet",
+                                      message: "A lista de extensões necessita da internet, mas é possivel ver as favoritadas.",
+                                      preferredStyle: .alert)
+        let okButton = UIAlertAction(title: NSLocalizedString("Ok",
+                                                              comment: "Entendeu que está sem internet"),
+                                     style: .default,
+                                     handler: nil)
+        okButton.setValue(TextColor.button, forKey: "titleTextColor")
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "Kingfisher",
-        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
         "state": {
           "branch": null,
-          "revision": "bbc4bc4def7eb05a7ba8e1219f80ee9be327334e",
-          "version": "6.2.1"
+          "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+          "version": "5.1.0"
         }
       },
       {

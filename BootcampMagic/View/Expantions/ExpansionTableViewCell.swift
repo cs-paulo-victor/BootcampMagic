@@ -53,7 +53,6 @@ extension ExpansionTableViewCell: ViewCode {
     }
 
     func setupAditionalConfiguration() {
-       self.backgroundColor = .clear
+        self.backgroundColor = .clear
     }
-
 }

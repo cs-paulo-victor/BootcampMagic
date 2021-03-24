@@ -8,13 +8,15 @@
 import UIKit
 
 class ProjectTabBarController: UITabBarController {
+
     let projectTabBarController = UITabBarController()
+    var cleanDone = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignBackground()
         creatBorderTabBar()
         setupTabBar()
-        assignBackground()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,12 +40,14 @@ class ProjectTabBarController: UITabBarController {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
                                                             .font: TextFont.button ?? .systemFont(ofSize: 16)],
                                                          for: .normal)
+
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key
                                                             .font: TextFont.button ?? .systemFont(ofSize: 16)],
                                                          for: .selected)
-
-        UITabBar.appearance().tintColor = TextColor.button
-        UITabBar.setTransparentTabbar()
+        UITabBar.appearance().unselectedItemTintColor = TextColor.buttonTabBarUnselected
+        UITabBar.appearance().tintColor = TextColor.buttonTabBarSelect
+        UITabBar.appearance().backgroundColor = .white
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -10)
         viewControllers = [setupExpansionsViewController(), setupFavoritesViewController()]
     }
 
@@ -61,18 +65,12 @@ class ProjectTabBarController: UITabBarController {
     func creatBorderTabBar() {
         let topline = CALayer()
         topline.frame = CGRect(x: 24, y: 0, width: self.tabBar.frame.width - 48, height: 2)
-        topline.backgroundColor = UIColor.white.cgColor
+        topline.backgroundColor = UIColor.black.cgColor
         self.tabBar.layer.addSublayer(topline)
         let firstVerticalLine = CALayer()
         let width = (self.tabBar.frame.width / 2)
         firstVerticalLine.frame = CGRect(x: width, y: 4, width: 2, height: self.tabBar.frame.height - 8)
-        firstVerticalLine.backgroundColor = UIColor.white.cgColor
+        firstVerticalLine.backgroundColor = UIColor.black.cgColor
         self.tabBar.layer.addSublayer(firstVerticalLine)
-    }
-}
-
-extension UITabBar {
-    static func setTransparentTabbar() {
-        UITabBar.appearance().backgroundImage = UIImage()
     }
 }
