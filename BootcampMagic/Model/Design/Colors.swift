@@ -10,7 +10,7 @@ import UIKit
 private enum Colors {
     static let black = UIColor.black
     static let white = UIColor.white
-    static let red = UIColor.red
+    static let red = UIColor(red: 173/255, green: 6/255, blue: 16/255, alpha: 1)
 }
 
 enum TextColor {
