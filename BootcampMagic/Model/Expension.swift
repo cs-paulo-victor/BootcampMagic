@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Expension: Codable {
+struct Expansion: Codable {
     let code,
         name,
         type: String

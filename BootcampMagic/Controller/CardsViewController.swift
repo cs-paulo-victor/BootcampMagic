@@ -8,7 +8,7 @@
 import UIKit
 
 class CardsViewController: CustomViewController {
-    var expensionCode = String()
+    var expansionCode = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCards()
@@ -21,7 +21,7 @@ view = CardsListView()
 }
 extension CardsViewController {
     func fetchCards () {
-        NetworkManager().requestCards(endpoint: .cards, parameters: .set, code: expensionCode) { result in
+        NetworkManager().requestCards(endpoint: .cards, parameters: .set, code: expansionCode) { result in
             switch result {
             case .success(let data):
                 guard let response = data.cards, let cardsView = (self.view as? CardsListView) else { return }
@@ -35,6 +35,6 @@ extension CardsViewController {
 }
 extension CardsViewController: ShowCardsProtocol {
     func showCards(expantionCode: String) {
-        expensionCode = expantionCode
+        expansionCode = expantionCode
     }
 }

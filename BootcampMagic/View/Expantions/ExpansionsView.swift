@@ -1,5 +1,5 @@
 //
-//  ExpensionsView.swift
+//  ExpansionsView.swift
 //  BootcampMagic
 //
 //  Created by paulo.victor.g.rosa on 22/03/21.
@@ -10,7 +10,7 @@ import UIKit
 protocol ShowCardsProtocol: AnyObject {
     func showCards (expantionCode: String)
 }
-class ExpensionsView: UIView {
+class ExpansionsView: UIView {
 
     // MARK: - Views
     lazy var expansionTableView: UITableView  = {
@@ -24,7 +24,7 @@ class ExpensionsView: UIView {
 
     // MARK: - Properties
     var sectionTitle = [Character]()
-    var sections = [SectionExpension]()
+    var sections = [SectionExpansion]()
     weak var delegate: ShowCardsProtocol?
 
     // MARK: - Life Cycle
@@ -38,29 +38,29 @@ class ExpensionsView: UIView {
     }
 }
     // MARK: - Setup
-extension ExpensionsView {
-    func setupSections(expensions: [Expension]) {
+extension ExpansionsView {
+    func setupSections(expansions: [Expansion]) {
         var firstLetter = [Character]()
 
-        for expension in expensions {
-            firstLetter.append(expension.name.first ?? Character(""))
+        for expansion in expansions {
+            firstLetter.append(expansion.name.first ?? Character(""))
         }
         sectionTitle = firstLetter.removingDuplicates()
 
         for title in sectionTitle {
-            var arrayExpantion = [Expension]()
+            var arrayExpantion = [Expansion]()
 
-            for expension in (expensions.filter {$0.name.first == title }) {
-                arrayExpantion.append(expension)
+            for expansion in (expansions.filter {$0.name.first == title }) {
+                arrayExpantion.append(expansion)
 
             }
-            sections.append(SectionExpension(letter: title, expantions: arrayExpantion))
+            sections.append(SectionExpansion(letter: title, expantions: arrayExpantion))
         }
     }
 }
 
 // MARK: - UICollectionViewDataSource
-extension ExpensionsView: UITableViewDataSource {
+extension ExpansionsView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections[section].expantions.count
     }
@@ -99,13 +99,13 @@ extension ExpensionsView: UITableViewDataSource {
     }
 }
 
-extension ExpensionsView: UITableViewDelegate {
+extension ExpansionsView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.showCards(expantionCode: sections[indexPath.section].expantions[indexPath.row].code)
     }
 }
 // MARK: - Autolayout
-extension ExpensionsView: ViewCode {
+extension ExpansionsView: ViewCode {
     func setupViewHierarchy() {
         addSubview(expansionTableView)
     }

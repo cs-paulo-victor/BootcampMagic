@@ -17,9 +17,9 @@ class ExpansionsViewController: CustomViewController {
     }
 
     override func loadView() {
-        let expensionsView = ExpensionsView()
-        expensionsView.delegate = self
-        view = expensionsView
+        let expansionsView = ExpansionsView()
+        expansionsView.delegate = self
+        view = expansionsView
     }
 }
 
@@ -32,9 +32,9 @@ extension ExpansionsViewController {
         NetworkManager().requestExpansions(endpoint: .sets, parameters: .type, type: .expansion) { (result) in
             switch result {
             case .success(let data):
-                guard let response = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
+                guard let response = data.sets, let expansionsView = (self.view as? ExpansionsView) else { return }
                 let expansion = response.sorted { $0.name < $1.name }
-                expansionsView.setupSections(expensions: expansion)
+                expansionsView.setupSections(expansions: expansion)
                 expansionsView.expansionTableView.reloadData()
             case .error(let anError):
                 print("Error: \(anError)")

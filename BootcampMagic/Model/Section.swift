@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct SectionExpension {
+struct SectionExpansion {
     var letter: Character
-    var expantions: [Expension]
+    var expantions: [Expansion]
 }
 
 struct SectionCards {
