@@ -8,16 +8,39 @@
 import UIKit
 import SnapKit
 
-class ExpansionsViewController: CustomViewController {
+class ExpansionsViewController: CustomViewController, ReachabilityObserverDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        try? addReachabilityObserver()
         setupNavigationBar()
         fetchExpansions()
     }
 
     override func loadView() {
         view = ExpensionsView()
+    }
+    deinit {
+      removeReachabilityObserver()
+    }
+
+    func reachabilityChanged(_ isReachable: Bool) {
+        if !isReachable {
+            alert()
+        }
+    }
+
+    func alert() {
+        let alert = UIAlertController(title: "Falha na conexão com a internet",
+                                      message: "A lista de extensões necessita da internet, mas é possivel ver as favoritadas.",
+                                      preferredStyle: .alert)
+        let okButton = UIAlertAction(title: NSLocalizedString("Ok",
+                                                              comment: "Entendeu que está sem internet"),
+                                     style: .default,
+                                     handler: nil)
+        okButton.setValue(TextColor.button, forKey: "titleTextColor")
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
