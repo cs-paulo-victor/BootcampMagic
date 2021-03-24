@@ -9,7 +9,7 @@ import Foundation
 
 struct Response: Codable {
     let cards: [Card]?
-    let sets: [CardSet]?
+    let sets: [Expension]?
 
     enum CodingKeys: String, CodingKey {
         case cards, sets

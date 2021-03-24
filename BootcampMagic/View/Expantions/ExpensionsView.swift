@@ -23,12 +23,11 @@ class ExpensionsView: UIView {
     }()
 
     // MARK: - Properties
-    var result = [CardSet]()
     var sectionTitle = [Character]()
-    var arraySection = [Section]()
+    var sections = [SectionExpension]()
     weak var delegate: ShowCardsProtocol?
-    // MARK: - Life Cycle
 
+    // MARK: - Life Cycle
     init() {
         super.init(frame: .zero)
         setupViews()
@@ -40,7 +39,7 @@ class ExpensionsView: UIView {
 }
     // MARK: - Setup
 extension ExpensionsView {
-    func setupSections(expensions: [CardSet]) {
+    func setupSections(expensions: [Expension]) {
         var firstLetter = [Character]()
 
         for expension in expensions {
@@ -49,13 +48,13 @@ extension ExpensionsView {
         sectionTitle = firstLetter.removingDuplicates()
 
         for title in sectionTitle {
-            var arrayExpantion = [CardSet]()
+            var arrayExpantion = [Expension]()
 
             for expension in (expensions.filter {$0.name.first == title }) {
                 arrayExpantion.append(expension)
 
             }
-            arraySection.append(Section(letter: title, expantions: arrayExpantion))
+            sections.append(SectionExpension(letter: title, expantions: arrayExpantion))
         }
     }
 }
@@ -63,7 +62,7 @@ extension ExpensionsView {
 // MARK: - UICollectionViewDataSource
 extension ExpensionsView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arraySection[section].expantions.count
+        return sections[section].expantions.count
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -95,14 +94,14 @@ extension ExpensionsView: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.setupViews()
-        cell.name.text = arraySection[indexPath.section].expantions[indexPath.row].name
+        cell.name.text = sections[indexPath.section].expantions[indexPath.row].name
         return cell
     }
 }
 
 extension ExpensionsView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.showCards(expantionCode: arraySection[indexPath.section].expantions[indexPath.row].code)
+        delegate?.showCards(expantionCode: sections[indexPath.section].expantions[indexPath.row].code)
     }
 }
 // MARK: - Autolayout

@@ -1,5 +1,5 @@
 //
-//  Set.swift
+//  CardSet.swift
 //  BootcampMagic
 //
 //  Created by paulo.victor.g.rosa on 17/03/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CardSet: Codable {
+struct Expension: Codable {
     let code,
         name,
         type: String

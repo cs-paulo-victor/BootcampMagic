@@ -15,8 +15,8 @@ class CardsViewController: CustomViewController {
     }
 
     override func loadView() {
-        view = CardsListView()  
-    }
+view = CardsListView()
+            }
 
 }
 extension CardsViewController {
@@ -24,12 +24,9 @@ extension CardsViewController {
         NetworkManager().requestCards(endpoint: .cards, parameters: .set, code: expensionCode) { result in
             switch result {
             case .success(let data):
-                guard let resultado = data.cards else { return }
-                print(resultado)
-//                let expansion = resultado.sorted { $0.name < $1.name }
-//                expansionsView.result = expansion
-//                expansionsView.setupSections(expensions: expansion)
-//                expansionsView.expansionTableView.reloadData()
+                guard let response = data.cards, let cardsView = (self.view as? CardsListView) else { return }
+                cardsView.setupSections(cards: response)
+                cardsView.cardListCollectionView.reloadData()
             case .error(let anError):
                 print("Error: \(anError)")
             }
@@ -39,6 +36,5 @@ extension CardsViewController {
 extension CardsViewController: ShowCardsProtocol {
     func showCards(expantionCode: String) {
         expensionCode = expantionCode
-        print(expantionCode)
     }
 }

@@ -32,9 +32,8 @@ extension ExpansionsViewController {
         NetworkManager().requestExpansions(endpoint: .sets, parameters: .type, type: .expansion) { (result) in
             switch result {
             case .success(let data):
-                guard let resultado = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
-                let expansion = resultado.sorted { $0.name < $1.name }
-                expansionsView.result = expansion
+                guard let response = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
+                let expansion = response.sorted { $0.name < $1.name }
                 expansionsView.setupSections(expensions: expansion)
                 expansionsView.expansionTableView.reloadData()
             case .error(let anError):

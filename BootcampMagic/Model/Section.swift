@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct Section {
+struct SectionExpension {
     var letter: Character
-    var expantions: [CardSet]
+    var expantions: [Expension]
+}
+
+struct SectionCards {
+    var type: String
+    var cards: [Card]
 }
