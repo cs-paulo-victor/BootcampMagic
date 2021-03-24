@@ -36,8 +36,20 @@ extension ExpansionsViewController {
                 expansionsView.setupSections(expensions: expansion)
                 expansionsView.expansionTableView.reloadData()
             case .error(let anError):
+                self.setCustom()
                 print("Error: \(anError)")
             }
         }
+    }
+
+    func setCustom() {
+        let alert = UIAlertController(title: "Falha na conecção",
+                                      message: "Tente se conectar a internet",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Ok",
+                                                               comment: "Entendeu que está sem internet"),
+                                      style: .cancel,
+                                      handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
