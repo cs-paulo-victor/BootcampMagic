@@ -10,7 +10,7 @@ import UIKit
 class HeaderSection: UICollectionReusableView {
     var name: UILabel = {
         let label = UILabel(frame: .zero)
-        label.font = TextFont.body
+        label.font = TextFont.detail
         label.textColor = TextColor.body
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
