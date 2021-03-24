@@ -17,7 +17,7 @@
 		2F45B81F260120120089DB19 /* BootcampMagicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B81E260120120089DB19 /* BootcampMagicUITests.swift */; };
 		2F68264C2603D11900487187 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F68264B2603D11900487187 /* SnapKit */; };
 		2F6C8F992608DDE600FD65C8 /* ExpensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C8F982608DDE600FD65C8 /* ExpensionsView.swift */; };
-		2F6EFD30260B7A160011F6A9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2F6EFD2F260B7A160011F6A9 /* Kingfisher */; };
+		2F6EFD30260B7A160011F6A9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		2F6EFD3B260BB2730011F6A9 /* HeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EFD3A260BB2730011F6A9 /* HeaderSection.swift */; };
 		2F74B9D02603DB0A0091127D /* ExpansionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74B9CF2603DB0A0091127D /* ExpansionTableViewCell.swift */; };
 		2F95048B26092BA20033FAAA /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95048A26092BA20033FAAA /* CardsListView.swift */; };
@@ -27,6 +27,7 @@
 		2FC5D46826090A3C00C13691 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D46626090A3C00C13691 /* Typography.swift */; };
 		2FC5D46926090A3C00C13691 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D46726090A3C00C13691 /* Colors.swift */; };
 		2FD0DD9426051DB300D3ABDF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD0DD9326051DB300D3ABDF /* Section.swift */; };
+		2FD5F9DF260BE1FD00BBEC35 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD5F9DE260BE1FD00BBEC35 /* Kingfisher */; };
 		2FE7D5D92602722C00DEEC2A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5D72602722C00DEEC2A /* Card.swift */; };
 		2FE7D5DA2602722C00DEEC2A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5D82602722C00DEEC2A /* Response.swift */; };
 		2FE7D5EF2602727400DEEC2A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5EE2602727400DEEC2A /* NetworkManager.swift */; };
@@ -97,7 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6EFD30260B7A160011F6A9 /* Kingfisher in Frameworks */,
+				2FD5F9DF260BE1FD00BBEC35 /* Kingfisher in Frameworks */,
+				2F6EFD30260B7A160011F6A9 /* (null) in Frameworks */,
 				2F68264C2603D11900487187 /* SnapKit in Frameworks */,
 				4895B1B3260BAFC200133358 /* Reachability in Frameworks */,
 			);
@@ -155,7 +157,6 @@
 				2F45B80A260120120089DB19 /* Info.plist */,
 				2F45B8022601200F0089DB19 /* BootcampMagic.xcdatamodeld */,
 				48BD6AE62603C654005537D2 /* Fontes */,
-				2F6EFD3A260BB2730011F6A9 /* HeaderSection.swift */,
 			);
 			path = BootcampMagic;
 			sourceTree = "<group>";
@@ -228,6 +229,7 @@
 		2FC4BA3426024675008003BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F6EFD3A260BB2730011F6A9 /* HeaderSection.swift */,
 				2FBC6D8E260A62E20016F209 /* Cards */,
 				2F6C8F972608DDBC00FD65C8 /* Expantions */,
 			);
@@ -283,6 +285,7 @@
 			packageProductDependencies = (
 				2F68264B2603D11900487187 /* SnapKit */,
 				4895B1B2260BAFC200133358 /* Reachability */,
+				2FD5F9DE260BE1FD00BBEC35 /* Kingfisher */,
 			);
 			productName = BootcampMagic;
 			productReference = 2F45B7F62601200F0089DB19 /* BootcampMagic.app */;
@@ -358,6 +361,7 @@
 			packageReferences = (
 				2F68264A2603D11900487187 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				4895B1B1260BAFC200133358 /* XCRemoteSwiftPackageReference "Reachability" */,
+				2FD5F9DD260BE1FD00BBEC35 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 2F45B7F72601200F0089DB19 /* Products */;
 			projectDirPath = "";
@@ -779,6 +783,14 @@
 				version = 5.0.1;
 			};
 		};
+		2FD5F9DD260BE1FD00BBEC35 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 6.2.1;
+			};
+		};
 		4895B1B1260BAFC200133358 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
@@ -794,6 +806,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F68264A2603D11900487187 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		2FD5F9DE260BE1FD00BBEC35 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FD5F9DD260BE1FD00BBEC35 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		4895B1B2260BAFC200133358 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;

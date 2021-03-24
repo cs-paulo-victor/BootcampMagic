@@ -7,10 +7,8 @@
 
 import UIKit
 
-class ExpansionsViewController: CustomViewController,ReachabilityObserverDelegate {
+class ExpansionsViewController: CustomViewController,  ReachabilityObserverDelegate {
     weak var delegate: ShowCardsProtocol?
- 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         try? addReachabilityObserver()

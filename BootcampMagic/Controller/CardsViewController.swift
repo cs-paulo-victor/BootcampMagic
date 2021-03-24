@@ -15,8 +15,8 @@ class CardsViewController: CustomViewController {
     }
 
     override func loadView() {
-view = CardsListView()
-            }
+        view = CardsListView()
+    }
 
 }
 extension CardsViewController {

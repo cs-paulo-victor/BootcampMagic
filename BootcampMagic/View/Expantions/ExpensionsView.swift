@@ -91,7 +91,6 @@ extension ExpensionsView: UITableViewDataSource {
         return 50
     }
 
-    // swiftlint:disable line_length
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell",
                                                        for: indexPath) as? ExpansionTableViewCell else {
