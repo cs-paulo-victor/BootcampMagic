@@ -33,13 +33,13 @@ class ExpansionsViewController: CustomViewController,  ReachabilityObserverDeleg
 
     func alert() {
         let alert = UIAlertController(title: "Falha na conexão com a internet",
-                                      message: "A lista de extensões necessita da internet, mas é possivel ver as favoritadas.",
+                                      message: "A lista de extensões necessita da internet.",
                                       preferredStyle: .alert)
         let okButton = UIAlertAction(title: NSLocalizedString("Ok",
                                                               comment: "Entendeu que está sem internet"),
                                      style: .default,
                                      handler: nil)
-        okButton.setValue(TextColor.button, forKey: "titleTextColor")
+        okButton.setValue(TextColor.buttonTabBarSelect, forKey: "titleTextColor")
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }
