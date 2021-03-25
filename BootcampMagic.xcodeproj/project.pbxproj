@@ -28,7 +28,6 @@
 		2FE7D5F426027C8F00DEEC2A /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7D5F326027C8F00DEEC2A /* CardSet.swift */; };
 		486E5D462603EECA00805009 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E5D452603EECA00805009 /* CustomViewController.swift */; };
 		4888FBB92602DD5500ED635D /* ProjectTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */; };
-		4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FBC026038B4000ED635D /* FavoritesViewController.swift */; };
 		4895B1B3260BAFC200133358 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 4895B1B2260BAFC200133358 /* Reachability */; };
 		4895B1B8260BAFE100133358 /* ReachabilityActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4895B1B7260BAFE100133358 /* ReachabilityActionDelegate.swift */; };
 		48BD6AE82603C693005537D2 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */; };
@@ -78,7 +77,6 @@
 		2FE7D5F326027C8F00DEEC2A /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
 		486E5D452603EECA00805009 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTabBarController.swift; sourceTree = "<group>"; };
-		4888FBC026038B4000ED635D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		4895B1B7260BAFE100133358 /* ReachabilityActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityActionDelegate.swift; sourceTree = "<group>"; };
 		48BD6AE72603C693005537D2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,7 +216,6 @@
 			children = (
 				4888FBB82602DD5500ED635D /* ProjectTabBarController.swift */,
 				2F45B7FD2601200F0089DB19 /* ExpansionsViewController.swift */,
-				4888FBC026038B4000ED635D /* FavoritesViewController.swift */,
 				486E5D452603EECA00805009 /* CustomViewController.swift */,
 			);
 			path = Controller;
@@ -412,7 +409,6 @@
 				2F45B7FE2601200F0089DB19 /* ExpansionsViewController.swift in Sources */,
 				2F45B7FA2601200F0089DB19 /* AppDelegate.swift in Sources */,
 				2FAC567F2603D56100E9D82D /* ViewCode.swift in Sources */,
-				4888FBC126038B4000ED635D /* FavoritesViewController.swift in Sources */,
 				2FC5D46926090A3C00C13691 /* Colors.swift in Sources */,
 				2F45B7FC2601200F0089DB19 /* SceneDelegate.swift in Sources */,
 				2FD0DD9426051DB300D3ABDF /* Section.swift in Sources */,
