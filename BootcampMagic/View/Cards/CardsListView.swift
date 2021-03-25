@@ -54,11 +54,8 @@ class CardsListView: UIView {
     // MARK: - Life Cycle
     init() {
         super.init(frame: .zero)
-       // DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
             self.setupViews()
             self.cardListCollectionView.reloadData()
-
-     //   }
     }
 
     required init?(coder: NSCoder) {

@@ -8,7 +8,18 @@
 import UIKit
 
 class ExpansionsViewController: CustomViewController,  ReachabilityObserverDelegate {
-    weak var delegate: ShowCardsProtocol?
+    weak var delegate: ShowCardsDelegate?
+    let service: NetworkManager
+
+    required init(service: NetworkManager) {
+        self.service = service
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         try? addReachabilityObserver()
@@ -51,7 +62,7 @@ extension ExpansionsViewController {
     }
 
     func fetchExpansions() {
-        NetworkManager().requestExpansions(endpoint: .sets, parameters: .type, type: .expansion) { (result) in
+        service.requestExpansions(endpoint: .sets, parameters: .type, type: .expansion) { (result) in
             switch result {
             case .success(let data):
                 guard let response = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
@@ -65,10 +76,10 @@ extension ExpansionsViewController {
     }
 }
 
-extension ExpansionsViewController: ShowCardsProtocol {
-    func showCards(expantionCode: String) {
-        let cardViewControler = CardsViewController()
-        cardViewControler.showCards(expantionCode: expantionCode)
+extension ExpansionsViewController: ShowCardsDelegate {
+    func didSelectExpansion(expantionCode: String) {
+        let cardViewControler = CardsViewController(service: service)
+        cardViewControler.didSelectExpansion(expantionCode: expantionCode)
         self.navigationController?.pushViewController(cardViewControler, animated: true)
     }
 }
