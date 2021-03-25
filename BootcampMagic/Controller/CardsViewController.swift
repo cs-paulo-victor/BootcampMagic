@@ -9,6 +9,17 @@ import UIKit
 
 class CardsViewController: CustomViewController {
     var expensionCode = String()
+    let service: NetworkManager
+
+    required init(service: NetworkManager) {
+        self.service = service
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCards()
@@ -21,7 +32,7 @@ class CardsViewController: CustomViewController {
 }
 extension CardsViewController {
     func fetchCards () {
-        NetworkManager().requestCards(endpoint: .cards, parameters: .set, code: expensionCode) { result in
+        service.requestCards(endpoint: .cards, parameters: .set, code: expensionCode) { result in
             switch result {
             case .success(let data):
                 guard let response = data.cards, let cardsView = (self.view as? CardsListView) else { return }
@@ -33,8 +44,8 @@ extension CardsViewController {
         }
     }
 }
-extension CardsViewController: ShowCardsProtocol {
-    func showCards(expantionCode: String) {
+extension CardsViewController: ShowCardsDelegate {
+    func didSelectExpansion(expantionCode: String) {
         expensionCode = expantionCode
     }
 }

@@ -11,6 +11,16 @@ class ProjectTabBarController: UITabBarController {
 
     let projectTabBarController = UITabBarController()
     var cleanDone = false
+    let service: NetworkManager
+
+    required init(service: NetworkManager) {
+        self.service = service
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +62,7 @@ class ProjectTabBarController: UITabBarController {
     }
 
     func setupExpansionsViewController() -> UINavigationController {
-        let firstViewController = UINavigationController(rootViewController: ExpansionsViewController())
+        let firstViewController = UINavigationController(rootViewController: ExpansionsViewController(service: service))
         firstViewController.title = "Expansions"
         return firstViewController
     }

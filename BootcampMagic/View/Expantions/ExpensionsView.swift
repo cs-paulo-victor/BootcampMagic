@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
-protocol ShowCardsProtocol: AnyObject {
-    func showCards (expantionCode: String)
+protocol ShowCardsDelegate: AnyObject {
+    func didSelectExpansion (expantionCode: String)
 }
 class ExpensionsView: UIView {
 
@@ -28,7 +28,7 @@ class ExpensionsView: UIView {
     // MARK: - Properties
     var sectionTitle = [Character]()
     var sections = [SectionExpension]()
-    weak var delegate: ShowCardsProtocol?
+    weak var delegate: ShowCardsDelegate?
 
     // MARK: - Life Cycle
     init() {
@@ -104,7 +104,7 @@ extension ExpensionsView: UITableViewDataSource {
 
 extension ExpensionsView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.showCards(expantionCode: sections[indexPath.section].expantions[indexPath.row].code)
+        delegate?.didSelectExpansion(expantionCode: sections[indexPath.section].expantions[indexPath.row].code)
     }
 }
 // MARK: - Autolayout
