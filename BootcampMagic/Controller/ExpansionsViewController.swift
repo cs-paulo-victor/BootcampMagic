@@ -6,10 +6,9 @@
 //
 
 import UIKit
-import SnapKit
 
-class ExpansionsViewController: CustomViewController, ReachabilityObserverDelegate {
-
+class ExpansionsViewController: CustomViewController,  ReachabilityObserverDelegate {
+    weak var delegate: ShowCardsProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         try? addReachabilityObserver()
@@ -18,7 +17,9 @@ class ExpansionsViewController: CustomViewController, ReachabilityObserverDelega
     }
 
     override func loadView() {
-        view = ExpensionsView()
+        let expensionsView = ExpensionsView()
+        expensionsView.delegate = self
+        view = expensionsView
     }
     deinit {
       removeReachabilityObserver()
@@ -53,14 +54,21 @@ extension ExpansionsViewController {
         NetworkManager().requestExpansions(endpoint: .sets, parameters: .type, type: .expansion) { (result) in
             switch result {
             case .success(let data):
-                guard let resultado = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
-                let expansion = resultado.sorted { $0.name < $1.name }
-                expansionsView.resultado = expansion
+                guard let response = data.sets, let expansionsView = (self.view as? ExpensionsView) else { return }
+                let expansion = response.sorted { $0.name < $1.name }
                 expansionsView.setupSections(expensions: expansion)
                 expansionsView.expansionTableView.reloadData()
             case .error(let anError):
                 print("Error: \(anError)")
             }
         }
+    }
+}
+
+extension ExpansionsViewController: ShowCardsProtocol {
+    func showCards(expantionCode: String) {
+        let cardViewControler = CardsViewController()
+        cardViewControler.showCards(expantionCode: expantionCode)
+        self.navigationController?.pushViewController(cardViewControler, animated: true)
     }
 }

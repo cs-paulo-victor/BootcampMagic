@@ -8,7 +8,7 @@
 import UIKit
 
 class ExpansionTableViewCell: UITableViewCell {
-
+    // MARK: - Views
     var name: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = TextFont.body
@@ -17,11 +17,27 @@ class ExpansionTableViewCell: UITableViewCell {
         return label
     }()
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.tintColor = .white
+    }
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        backgroundColor()
+        self.accessoryType = .disclosureIndicator
+
+        self.tintColor = .white
+    }
+
+    fileprivate func backgroundColor() {
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .clear
+        self.selectedBackgroundView = backgroundView
     }
 
 }
+    // MARK: - Autolayout
 
 extension ExpansionTableViewCell: ViewCode {
     func setupViewHierarchy() {
